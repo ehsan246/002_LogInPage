@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+
+
+/** {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+}*/
+
+body {
+	/*position: relative;*/
+	background: #BF8A86;
+	font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+img	{
+	/*position: absolute;*/
+	padding: 10px;
+}
+
+.wrap {
+	width: 900px;
+	height: 600px;
+	background: rgba(37,44,61,0.5);
+	margin: 50px auto;
+	position: relative;
+	box-shadow: 20px 20px 25px grey;
+
+}
+
+.detils {
+	position: relative;
+	/*box-sizing: border-box;*/
+	float: left;
+	height: 600px;
+	width: 300px;
+	color: white;
+	/*padding: 30px;*/
+
+}
+
+.detils img {
+	padding-top: 50px;
+	padding-left: 114px;
+}
+
+.detils h1 {
+	margin: 0;
+	padding-left: 85px;
+	padding-bottom: 0;
+
+}
+
+
+.detils p {
+	margin: 0;
+	padding: 0;
+	padding-left: 110px;
+	font-size: 12px;
+}
+
+.detils .description{
+	padding: 40px;
+	font-size: 12px;
+}
+
+ul {
+	margin-left: 25px;
+	font-size: 12px;
+}
+li  {
+	margin-top: 25px;
+}
+
+
+.signup h1, .form h1, .fb h1, .faq h1 {
+	margin: 0 0;
+	padding-left: 50px;
+	padding-top: 35px;
+	font-size: 1.5rem;
+	color: #5c70a2;
+}
+
+
+.signup {
+	float: left;
+	height: 100px;
+	width: 600px;
+	/*background: red;*/
+	background: #F3F4F4;
+
+}
+
+
+
+.form {
+	position: relative;
+	float: left;
+	height: 400px;
+	width: 300px;
+	/*background: yellow;*/
+	background: #F3F4F4;
+	/*margin-bottom: 0;*/
+
+}
+
+.form form {
+	position: relative;
+	padding-left: 50px;
+	padding-top: 20px;
+}
+
+.form input[type=text] {
+	/*position: absolute;*/
+	font-size: 16px;
+	height: 25px;
+	margin-top: 40px;
+	border:0;
+	width: 200px;
+	border-bottom: 2px solid #7D97C0;
+	background: none;
+	outline: none;
+/*	background-image: url(fb.png) ;
+    background-position: right;
+    background-repeat: no-repeat;*/
+}
+
+/*.form i {
+	position: absolute;
+	top: 65px;
+	left: 230px;
+}
+*/
+
+.form input[type=text]:focus {
+	border-bottom: 2px solid #130328;
+
+}
+
+
+
+.form i {
+	/* separate method in both form but i couldn't use Before pseudo element.*/
+	/* https://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form */
+	position: relative;
+	left: -20px;
+
+	/* is it possibe to use Before psudo element after input[type=text]*/
+	/* https://stackoverflow.com/questions/2587669/can-i-use-a-before-or-after-pseudo-element-on-an-input-field */
+}
+
+
+
+.fb {
+	float: left;
+	height: 400px;
+	width: 300px;
+	/*background: orange;*/
+	background: #F3F4F4;
+	/*border-left: 1px solid black;*/
+	position: relative;
+	/*margin-bottom: 0;*/
+}
+
+/*.fb img {
+	position: absolute;
+	top: 40px;
+	left: -15px;
+}*/
+
+.fb p {
+	position: absolute;
+	top: 180px;
+	left: 15px;
+	color: #5c70a2;
+}
+
+.fb p::before {
+	content: '';
+	background-color: #5c70a2;
+	/*border: 1px solid #F3F4F4;*/
+	/*border-radius: 50%;*/
+	position: absolute;
+	width: 2px;
+	height: 100px;
+	left: 7px;
+	top: -120px;
+
+}
+
+.fb p::after {
+	content: '';
+	background-color: #5c70a2;
+	/*border: 1px solid #F3F4F4;*/
+	/*border-radius: 50%;*/
+	position: absolute;
+	width: 2px;
+	height: 100px;
+	left: 7px;
+	top: 50px;
+
+}
+
+
+.fb input[type=text] {
+	position: relative;
+	margin: 0 auto;
+	left: 50px;
+	top: 120px;
+	width: 200px;
+	height: 30px;
+	border: 1px solid #AAA;
+	background: #7D97C0 /*url(fb.png) no-repeat */;
+	border-radius: 10px;
+	outline: none;
+/*	background-image: url(fb.png) no-repeat;
+    background-position: 0;*/
+	/*box-shadow: inset 0 2px 5px rgba(0,0,0,.4), 1px 1px 5px #DDD;*/
+}
+
+.fb-logo{
+	position: absolute;
+	content: url(fb.png);
+	top: 189px;
+	left: 220px;
+}
+
+
+
+/*
+.fb input[type=text][required] {
+
+	background: url(fb.png);
+
+}*/
+/*
+.search input[type=text] {
+
+	position: absolute;
+	display: hidden;
+	left: 30px;
+	float: right;
+	width: 110px;
+	height: 30px;
+	font-size: 16px;
+	color: #666;
+	outline: solid transparent;
+
+}*/
+
+
+.faq {
+	position: relative;
+	float: left;
+	height: 100px;
+	width: 600px;
+	/*background: red;*/
+	background: #F3F4F4;
+}
+
+.faq h1 {
+	display: inline-block;
+	position: absolute;
+	margin: 5px 150px;
+	padding: 10px 18px;
+	border: 1px solid #7D97C0;
+	border-radius: 10px;
+}
